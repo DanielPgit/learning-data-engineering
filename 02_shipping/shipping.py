@@ -5,7 +5,6 @@ premium_shipping = 125
 ground_flat_charge = 20.00
 
 
-
 if weight <= 0:
     print("Error: Invalid weight")
 else:
@@ -20,7 +19,7 @@ else:
         ground_cost = (weight * 4.75) + ground_flat_charge
 
 
-    #Drone Shipping (There is not flat charge)
+    #Drone Shipping (No flat charge)
 
     if weight <= 2:
         drone_cost = (weight * 4.50) 
@@ -46,3 +45,5 @@ else:
         print(f"The cheapest method is: Drone Shipping. Total: ${drone_cost}")
     else:
         print(f"The cheapest method is: Premium Shipping. Total: ${premium_shipping}")
+        
+        

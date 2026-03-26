@@ -1,1 +1,20 @@
+# Entornos virtuales (No se suben porque son pesados y locales)
+.venv/
+venv/
+env/
+.env/
+
+# Archivos de práctica y borradores personales
+playground.py
+scratchpad.py
+temp_*.py
+
+# Carpetas de otros proyectos que no quieres en este repo
+AutoClicker/
 autoclicker/
+
+# Archivos del sistema y de VS Code (Opcional pero recomendado)
+.vscode/
+__pycache__/
+*.pyc
+.DS_Store
