@@ -31,7 +31,7 @@ elif ball == 8:
     answer = "Outlook not so good"
 elif ball == 9:
     answer = "Very doubtful"
-    
+
     
 if not question:
     print("Do you really don't want to ask?")
