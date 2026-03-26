@@ -1,59 +1,40 @@
-statement_one = False
+import random 
 
-statement_two = True
+name = input("¿What's your name? ")
 
-credits = 120
-gpa = 1.8
+if not name:
+    name = "Anonymous"
 
-if not credits >= 120:
-    print("You do not have enough credits to graduate")
+
+question = input("Ask me something " + name + ": ")
+
+
+answer = ""
+
+ball = random.randint(1, 9)
+
+if ball == 1:
+    answer = "Yes - definitely"
+elif ball == 2:
+    answer = "It is decidedly so"
+elif ball == 3:
+    answer = "Without a doubt"
+elif ball == 4:
+    answer = "Reply hazy, try again"
+elif ball == 5:
+    answer = "Ask again later"
+elif ball == 6:
+    answer = "Better not tell you now"
+elif ball == 7:
+    answer = "My sources say no"
+elif ball == 8:
+    answer = "Outlook not so good"
+elif ball == 9:
+    answer = "Very doubtful"
     
-if not gpa >= 2.0:
-    print("Your GPA is not high enough to graduate")
     
-if not credits >= 120 and not gpa >= 2.0:
-    "You do not meet either requierements to graduate"
-    
-grade = 86
-
-if grade >= 90:
-    print("A")
-elif grade >= 80:
-    print("B")
-elif grade >= 70:
-    print("C")
-elif grade >= 60:
-    print("D")
+if not question:
+    print("Do you really don't want to ask?")
 else:
-    print("F")
-    
-    # 1. Definimos el peso en la Tierra y el número del planeta
-peso_tierra = 70  # Puedes cambiar este número
-numero_planeta = 3 # Digamos que Codey va a Jupiter
-
-# 2. Empezamos la "escalera" de decisiones
-if numero_planeta == 1:
-    peso_destino = peso_tierra * 0.91
-    nombre_planeta = "Venus"
-elif numero_planeta == 2:
-    peso_destino = peso_tierra * 0.38
-    nombre_planeta = "Mars"
-elif numero_planeta == 3:
-    peso_destino = peso_tierra * 2.34
-    nombre_planeta = "Jupiter"
-elif numero_planeta == 4:
-    peso_destino = peso_tierra * 1.06
-    nombre_planeta = "Saturn"
-elif numero_planeta == 5:
-    peso_destino = peso_tierra * 0.92
-    nombre_planeta = "Uranus"
-elif numero_planeta == 6:
-    peso_destino = peso_tierra * 1.19
-    nombre_planeta = "Neptune"
-else:
-    print("Ese número de planeta no existe en nuestra lista.")
-    peso_destino = None
-
-# 3. Mostramos el resultado si el planeta era válido
-if peso_destino:
-    print(f"Tu peso en {nombre_planeta} sería de {peso_destino} kg.")
+    print(f"{name} asks: {question}")
+    print(f"Magic 8-Ball's answer: {answer}")
