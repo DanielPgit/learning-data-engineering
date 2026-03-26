@@ -1,1 +1,1 @@
-echo "nombre_de_la_carpeta_del_autoclicker/" >> .gitignore
+autoclicker/
