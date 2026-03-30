@@ -21,5 +21,4 @@ full_gradebook = last_semester_gradebook + gradebook
 
 
 
-print(gradebook)
-print(full_gradebook)
+print(gradebook, full_gradebook)
