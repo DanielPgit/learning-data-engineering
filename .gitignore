@@ -1,19 +1,19 @@
-# Entornos virtuales (No se suben porque son pesados y locales)
+# VENV
 .venv/
 venv/
 env/
 .env/
 
-# Archivos de práctica y borradores personales
+# Practice 
 playground.py
 scratchpad.py
 temp_*.py
 
-# Carpetas de otros proyectos que no quieres en este repo
+# Another Projects
 AutoClicker/
 autoclicker/
 
-# Archivos del sistema y de VS Code (Opcional pero recomendado)
+# Sistem and VSC
 .vscode/
 __pycache__/
 *.pyc
