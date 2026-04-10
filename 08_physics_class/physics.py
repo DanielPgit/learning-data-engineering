@@ -41,6 +41,11 @@ bomb_energy = get_energy(bomb_mass)
 print(f"A 1kg bomb supplies {bomb_energy} Joules.")
 
 
+# This function demonstrates function nesting:
+# It calls 'get_force' to calculate the force first,
+# then multiplies the result by distance to get work.
+# It works because 'get_force' returns a number that
+# Python can immediately use in the next calculation.
 def get_work(mass, acceleration, distance):
     work = get_force(mass, acceleration) * distance
     return work
